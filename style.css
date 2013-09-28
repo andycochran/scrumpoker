@@ -1,0 +1,177 @@
+
+/* =Base Styles
+-------------------------------------------------------------- */
+
+/* Typography */
+body { 
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+  line-height: 1.5; 
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+}
+body, select, input, textarea {
+  color: #666;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  margin: 0;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em; text-transform: uppercase; }
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #888; }
+a:hover { color: #bbb; }
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* =Nonsemantic Base Styles
+-------------------------------------------------------------- */
+
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* Hide for both screenreaders and browsers */
+.is-hidden { display: none; visibility: hidden; }
+/* Hide only visually, but have it available for screenreaders */
+.is-screen-reader-text,
+.is-visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+/* Hide visually and from screenreaders, but maintain layout */
+.is-invisible { visibility: hidden; }
+
+
+/* =Layout
+-------------------------------------------------------------- */
+
+html { height: 100%; }
+body {
+  height: 100%;
+  padding: 1.5em 1.5em 3em 1.5em;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+.card {
+  display: none;
+  color: #eee;
+  height: 100%;
+  border-top: 2px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  border-left: 1px solid rgba(255,255,255,0.2);
+  border-radius: 1em;
+  position: relative;
+  background-color: MediumSeaGreen;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.card:target {
+  display: block;
+}
+.card-number {
+  font-size: 7em;
+  line-height: 2em;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -1em;
+  text-shadow:  -4px -4px 0 rgba(0,0,0,0.05), 
+                 0px -4px 0 rgba(0,0,0,0.05), 
+                 4px -4px 0 rgba(0,0,0,0.05), 
+                -4px  0px 0 rgba(0,0,0,0.05), 
+                 4px  0px 0 rgba(0,0,0,0.05), 
+                -4px  4px 0 rgba(0,0,0,0.05), 
+                 0px  4px 0 rgba(0,0,0,0.05), 
+                 4px  4px 0 rgba(0,0,0,0.05);
+}
+
+#card-0 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/3/33/Mtree-spiral-31_nevit_45.svg); 
+}
+#card-1 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/7/73/Mtree-spiral-09_nevit_23.svg); 
+}
+#card-2 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/8/81/Mtree-spiral-12_nevit_26.svg); 
+}
+#card-3 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/0/0d/Mtree-spiral-41_nevit_55.svg); 
+}
+#card-5 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/0/09/Mtree-spiral-22_nevit_36.svg); 
+}
+#card-8 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/9/9b/Mtree-spiral-25_nevit_39.svg); 
+}
+#card-13 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/3/3d/Mtree-spiral-08_nevit_22.svg); 
+}
+#card-21 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/f/f7/Mtree-spiral-32_nevit_46.svg); 
+}
+#card-34 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/1/10/Mtree-spiral-15_nevit_29.svg); 
+}
+#card-55 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/0/01/Mtree-spiral-11_nevit_25.svg); 
+}
+#card-89 { 
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/7/76/Mtree-spiral-26_nevit_40.svg); 
+}
+
+.prev, 
+.next {
+  display: block;
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  text-indent: -9999px;
+}
+.prev {
+  right: 50%;
+}
+.next {
+  left: 50%;
+}
+
+nav a {
+  float: left;
+  width: 9%;
+  line-height: 3em;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+
+
+/* =Media Queries for Responsive Layout
+-------------------------------------------------------------- */
+
+@media only screen and (min-height: 25em) {
+  .card-number {
+    font-size: 12em;
+  }
+}
+
+@media only screen and (min-height: 40em) {
+  .card-number {
+    font-size: 18em;
+  }
+}

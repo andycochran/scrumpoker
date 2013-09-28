@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="en-US" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html dir="ltr" lang="en-US"> <!--<![endif]-->
+
+<head>
+  <title>Scrum Poker</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Scrum Poker">
+
+  <!--  Mobile Viewport Fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Favicon & Progressively-Enhanced Touch Icons: http://mathiasbynens.be/notes/touch-icons#sizes -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+  <link rel="stylesheet" href="normalize.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+
+</head>
+<body>
+
+  <section class="card" id="card-0">
+    <h2 class="card-number card-number-0">0</h2>
+    <a href="#card-1" class="next">1</a>
+  </section>
+
+  <section class="card" id="card-1">
+    <h2 class="card-number card-number-1">1</h2>
+    <a href="#card-0" class="prev">0</a>
+    <a href="#card-2" class="next">2</a>
+  </section>
+
+  <section class="card" id="card-2">
+    <h2 class="card-number card-number-2">2</h2>
+    <a href="#card-1" class="prev">1</a>
+    <a href="#card-3" class="next">3</a>
+  </section>
+
+  <section class="card" id="card-3">
+    <h2 class="card-number card-number-3">3</h2>
+    <a href="#card-2" class="prev">2</a>
+    <a href="#card-5" class="next">5</a>
+  </section>
+
+  <section class="card" id="card-5">
+    <h2 class="card-number card-number-5">5</h2>
+    <a href="#card-3" class="prev">3</a>
+    <a href="#card-8" class="next">8</a>
+  </section>
+
+  <section class="card" id="card-8">
+    <h2 class="card-number card-number-8">8</h2>
+    <a href="#card-5" class="prev">5</a>
+    <a href="#card-13" class="next">13</a>
+  </section>
+
+  <section class="card" id="card-13">
+    <h2 class="card-number card-number-13">13</h2>
+    <a href="#card-8" class="prev">8</a>
+    <a href="#card-21" class="next">21</a>
+  </section>
+
+  <section class="card" id="card-21">
+    <h2 class="card-number card-number-21">21</h2>
+    <a href="#card-13" class="prev">13</a>
+    <a href="#card-34" class="next">34</a>
+  </section>
+
+  <section class="card" id="card-34">
+    <h2 class="card-number card-number-34">34</h2>
+    <a href="#card-21" class="prev">21</a>
+    <a href="#card-55" class="next">55</a>
+  </section>
+
+  <section class="card" id="card-55">
+    <h2 class="card-number card-number-55">55</h2>
+    <a href="#card-34" class="prev">34</a>
+    <a href="#card-89" class="next">89</a>
+  </section>
+
+  <section class="card" id="card-89">
+    <h2 class="card-number card-number-89">89</h2>
+    <a href="#card-55" class="prev">55</a>
+  </section>
+
+  <nav>
+    <a href="#card-0">0</a>
+    <a href="#card-1">1</a>
+    <a href="#card-2">2</a>
+    <a href="#card-3">3</a>
+    <a href="#card-5">5</a>
+    <a href="#card-8">8</a>
+    <a href="#card-13">13</a>
+    <a href="#card-21">21</a>
+    <a href="#card-34">34</a>
+    <a href="#card-55">55</a>
+    <a href="#card-89">89</a>
+  </nav>
+
+</body>
+</html>
